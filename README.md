@@ -1,13 +1,21 @@
-# Java Layout Project
+# Java Layout Engine
 
-Java Maven Anwendung zur Erstellung und Praesentation von grafischen Layouts.
+## Übersicht
+Die **Java Layout Engine** ist eine Desktop-Anwendung auf Maven-Basis zur Demonstration und Analyse verschiedener grafischer Layout-Manager in Java.
 
-## Funktionalitaeten
-- Uebersichtlicher Code und strukturierte Aufteilung der Komponenten.
-- Einfache Integration und Anpassung an bestehende Systeme.
+## Projektstruktur & Architektur
+- `src/main/java/Main.java`: Hauptklasse zur Initialisierung der Benutzeroberfläche.
+- `src/main/java/Launcher.java`: Starter-Klasse zur Entkopplung des Modulstarts.
+- `pom.xml`: Maven-Konfigurationsdatei für Bau-Prozesse und Abhängigkeiten.
+- `target/`: Generierter Bytecode und kompilierte `.class`-Dateien.
 
-## Nutzung
-Bauen und Ausfuehren mit `mvn clean compile exec:java`.
+## Hauptfunktionalitäten
+- **Layout-Demonstration**: Vergleich unterschiedlicher Java Swing/JavaFX Layout-Verhalten.
+- **Saubere Trennung**: Verwendung einer Starter-Klasse zur Vermeidung von JavaFX-Laufzeitfehlern.
+- **Standardisiertes Build-System**: Vollständige Verwaltung über Apache Maven.
+
+## Ausführung & Nutzung
+Kompilierung und Ausführung erfolgen über Maven mit `mvn clean compile exec:java`.
 
 ## Lizenz
-Dieses Projekt steht unter der MIT-Lizenz.
+Dieses Projekt steht under der MIT-Lizenz.
